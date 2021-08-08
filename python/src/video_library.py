@@ -43,3 +43,6 @@ class VideoLibrary:
             does not exist.
         """
         return self._videos.get(video_id, None)
+
+    def get_video_via_title(self, title):
+        return self._videos.get(title, None)
